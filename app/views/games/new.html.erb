@@ -1,0 +1,15 @@
+<h1>New game!</h1>
+<p>Here are the 9 letters</p>
+
+  <div id="container">
+    <ul id="got_letters">
+      <% @letters.each do |l| %>
+      <li> <%= l %> </li>
+      <% end %>
+    </ul>
+  </div>
+
+<form action="/score">
+  <input type="text" name="Your proposal">
+  <input type="submit" value="Play!">
+</form>
